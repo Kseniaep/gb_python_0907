@@ -13,6 +13,7 @@ num_3 = int(input('Введите число 3 '))
 print(division(num_1, num_2))
 print(my_func(num_1, num_2, num_3))
 
+
 # именованные параметры
 def second_func(var_2, var_1, var_3):
     print(f"var_2 - {var_2}; var_1 - {var_1}; var_3 - {var_3}")
