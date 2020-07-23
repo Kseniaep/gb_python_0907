@@ -2,5 +2,5 @@ from sys import argv
 
 script_name, work, rate, bonus = argv
 
-salary = (work * rate) + bonus
-print("Зарплата: ", salary)
+salary = (int(work) * int(rate)) + int(bonus)
+print("Зарплата: ",salary)
