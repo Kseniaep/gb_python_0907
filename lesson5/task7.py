@@ -1,3 +1,4 @@
+import json
 firm_profit = {}
 with open("obj_7.txt") as f_obj:
     avg_profit = 0
@@ -10,3 +11,5 @@ with open("obj_7.txt") as f_obj:
             c += 1
     firm_profit['average_profit'] = round(avg_profit/c,2)
     print(firm_profit)
+with open("my_file.json", "w") as write_f:
+    json.dump(firm_profit, write_f)
