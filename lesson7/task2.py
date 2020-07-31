@@ -7,7 +7,7 @@ class Clothes(ABC):
 
 class Coat(Clothes):
 
-    def __init__(self,v):
+    def __init__(self, v):
         self.v = v
 
     @property
@@ -22,7 +22,7 @@ class Coat(Clothes):
             self.__v = v
 
     def expens(self):
-        return (round(self.v/6.5,1) + 0.5)
+        return (round(self.v/6.5, 1) + 0.5)
 
 
 class Suit(Clothes):
@@ -41,7 +41,7 @@ class Suit(Clothes):
             self.__h = h
 
     def expens(self):
-        return round(2*self.h,1) + 0.3
+        return round(2*self.h, 1) + 0.3
 
 
 s = Suit(1.52)
